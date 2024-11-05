@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sipariş Ekranı</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <div class="product-page">
+        <div class="product-image">
+            <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="reviews">(23)</span>
+            <img src="siparis-2.png" alt="">
+            <div class="product-ext">
+                <img src="siparis-2(ext) (1).png">
+                <img src="siparis-2(ext) (2).png">
+                <img src="siparis-2(ext) (3).png">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Tulpar T5 V23.4 15,6" Oyun Bilgisayarı</h1>
+            <li>Intel® Alder Lake Core™ i7-12700H 14C/20T; 24MB L3; E-CORE Max 3.50GHZ P-CORE Max 4.70GHZ; 45W</li>
+            <li>NVIDIA® GeForce® RTX4060 Max-Performance 8GB GDDR6 128-Bit DX12</li>
+            <li>5,6" FHD 1920x1080 144Hz IPS Mat LED Ekran</li>
+            <li>6GB (2x8GB) DDR4 3200MHz</li>
+            <li>500GB M.2 SSD PCIe 4.0 x4.</li>
+            <li>Monster Sırt Çantası Hediye</li>
+            <div class="price">
+                <span class="current-price">43.999,00 TL</span>
+                <span class="installment">3,666.58 TL'den başlayan taksitlerle</span>
+            </div>
+            <button class="add-to-cart">Sepete Ekle</button> 
+            <button class="favorite">
+                <i class="fas fa-heart"></i>
+            </div>
+        <div class="taksit">
+            <a href="">Taksit seçenekleri için tıklayın</a>
+        </div>
+        <div class="yorum-container">
+            <h2>Kullanıcı Yorumları</h2>
+    
+            <!-- Yorum Formu -->
+            <div class="yorum-form">
+                <input type="text" id="adInput" placeholder="Adınız">
+                <input type="text" id="soyadInput" placeholder="Soyadınız">
+                <textarea id="yorumInput" placeholder="Yorumunuzu buraya yazın..."></textarea>
+                <button onclick="yorumEkle()">Yorum Gönder</button>
+            </div>
+    
+            <!-- Yorum Listesi -->
+            <div class="yorum-listesi" id="yorumListesi">
+                <!-- Yorumlar buraya eklenecek -->
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

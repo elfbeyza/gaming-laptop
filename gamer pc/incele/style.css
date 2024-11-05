@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+
+:root {
+    --primary-color: hsl(0, 88%, 30%);
+    --primary-color-alt: hsl(0, 94%, 73%);
+    --second-color: #4b2424;
+    --second-color-alt: hsla(222, 39%, 6%, 0.65);
+    --third-color: hsl(220, 36%, 28%);
+    --white-color: #fbfbfb;
+    --white-color-alt: hsl(240, 1%, 72%);
+    --dark-color: hsl(300, 100%, 0%);
+  }
+.product-page {
+    display: flex;
+    padding: 60px;
+    border-radius: 20px;
+    background-color: var(--white-color);
+    max-width: 1180px;
+    height: 800px;
+    margin: 37px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.nav-item{
+  font-size: 1.1rem;
+  letter-spacing: 0.07rem;
+  position: relative;
+  background: -webkit-linear-gradient(
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 5px;
+  padding: 0.9rem 1rem;
+}
+.product-image img {
+    max-width: 36%;
+    height: auto;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.product-ext img{
+    display:grid;
+    width: 37%;
+    height: 37%;
+    position: relative;
+    margin-left: 44rem;
+    padding: 2rem;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-ext img:hover {
+    transform: scale(1.4); 
+}
+
+.product-details {
+    margin-left: 20px;
+    margin-bottom: 7rem;
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    width: 70%;
+    height: 40%;
+}
+
+.price {
+    font-size: 30px;
+    color: #333;
+    margin-top: 7px;
+}
+
+.current-price {
+    font-weight: bold;
+}
+
+.installment {
+    font-size: 14px;
+    color: #888;
+}
+
+.add-to-cart {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(
+    to top,
+    var(--primary-color),
+    var(--second-color)
+  );
+}
+.add-to-cart:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.349); /* Gölgeyi büyüt */
+    transform: scale(1.1);
+}
+
+.favorite {
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: #d0cfcf; /* Hafif gri arka plan */
+    border-radius: 35%; /* Tam yuvarlak */
+    border: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: #8e6d6dc6; /* İlk hali gri */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.favorite:hover {
+    background-color: #ffe5e5; /* Üzerine gelince açık kırmızı arka plan */
+    color: #e52232; /* Kırmızı kalp rengi */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.349); /* Gölgeyi büyüt */
+    transform: scale(1.1); /* Hafif büyüme efekti */
+}
+
+.product-rating {
+    display: flex;
+    align-items:flex-start;
+    padding: 2 1rem;
+    height: 40%;
+    width: 50%;
+}
+.stars {
+    color: #ffcc00;
+    margin-bottom: 30rem;
+    font-size: 25px;
+}
+
+.reviews {
+    color: #888;
+    margin-top: 0.7rem;
+    margin-bottom: 30rem;
+    font-size: 17px;
+}
+
+.taksit{
+    margin-top: -70px;
+    text-align: left;
+}
+.taksit a{
+    color: #868484; 
+    text-decoration: none;
+    border-bottom: 2px solid rgb(94, 11, 11); /* Altına siyah bir çizgi ekler */
+    padding-bottom: 5px;
+}
+
+a:visited {
+    color: #868484;
+}
+
+.yorum-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 230px;
+}
+
+.yorum-form input,
+.yorum-form textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: none;
+}
+.yorum .yorum-isim {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.yorum-form textarea {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.yorum-form button {
+    width: 50%;
+    margin-left:130px ;
+    padding: 10px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    color: #f9f9f9;
+    background-image: linear-gradient(
+    to top,
+    var(--primary-color),
+    var(--second-color)
+  );
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.yorum-form button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.349); /* Gölgeyi büyüt */
+    transform: scale(1.1);
+}
+
+.yorum-listesi {
+    margin-top: 20px;
+}
+.yorum {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    
+}
